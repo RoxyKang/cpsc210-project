@@ -103,8 +103,8 @@ public class UISignUp extends JFrame implements ActionListener {
 
                 _panel_6.setVisible(false);
                 _panel_5.setVisible(true);
-                SQLHelper.initUserInfo();
-                //SQLHelper.insertUserInfo(userInfo);
+                //SQLHelper.initUserInfo();
+                SQLHelper.insertUserInfo(userInfo);
                 _button_signIn.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {

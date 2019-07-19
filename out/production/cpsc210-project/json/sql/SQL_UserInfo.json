@@ -1,0 +1,14 @@
+[
+  {
+    "Name": "SQL_CreateTable_UserInfo",
+    "SqlStr": "Create Table UserInfo(ID INTEGER PRIMARY KEY AUTOINCREMENT,NAME TEXT NOT NULL,PASSWORD TEXT NOT NULL)"
+  },
+  {
+    "Name": "SQL_Select_UserInfo",
+    "SqlStr": "Select * from UserInfo"
+  },
+  {
+    "Name": "SQL_Insert_UserInfo",
+    "SqlStr": "Insert into UserInfo(NAME,PASSWORD)Values('%s','%s')"
+  }
+]
