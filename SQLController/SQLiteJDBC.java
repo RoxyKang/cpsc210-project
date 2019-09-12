@@ -3,10 +3,10 @@ package SQLController;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class SQLiteJDBC {
+class SQLiteJDBC {
     private Connection c;
 
-    public void createSQLConnect() {
+    void createSQLConnect() {
         try {
             Class.forName("org.sqlite.JDBC");
             c = DriverManager.getConnection("jdbc:sqlite:test.db");
@@ -17,7 +17,7 @@ public class SQLiteJDBC {
         System.out.println("Opened database successfully");
     }
 
-    public Connection getConnection() {
+    Connection getConnection() {
         return this.c;
     }
 
